@@ -1,0 +1,17 @@
+<body itemscope="" itemtype="https://schema.org/WebPage">
+  
+  <a href="/" class="logo"><img src="/img/get-well-soon-messages-logo.png" alt="Get Well Messages"></a>
+  
+  <div class="wrapper">
+
+          <h1>{% if page.title2 %}{{ page.title2 }}  {% else %}{{ page.title }}{% endif %}</h1>
+  
+      <div class="sharing">
+        
+  <a class="sharing-button twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" title="Share on Twitter">Twitter</a>
+
+  <a class="sharing-button facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+
+  <a class="sharing-button googleplus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google Plus">Google+</a>
+ 
+</div>
