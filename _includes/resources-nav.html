@@ -1,1 +1,23 @@
 
+<!-- Get Well Within Post Bottom - Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2642906032724935"
+     data-ad-slot="6197924413"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h3>Get Well Resources</h3>  
+
+<ul class="bottom-nav">
+{% for apage in site.pages %}
+    {% if apage.categories contains 'navbottom' %}
+        {% if page.url != apage.url %}
+ <li><a href="{{ apage.url | prepend: site.baseurl }}">{{ apage.title2 }}</a></li>                                             
+        {% endif %}
+    {% endif %}
+{% endfor %}     
+</ul>
