@@ -1,0 +1,21 @@
+---
+layout: default
+published: true
+---
+<h2>404 Error - page not found</h2>
+
+<p>We're sorry, but the page you are looking for doesn't exist.</p>
+
+<p>You can go to the <a href="/">homepage</a></p>
+
+<p>Or try some of our latest posts:</p>
+
+<ul>
+{% for apage in site.pages %}
+    {% if apage.categories contains 'messages' %}
+        {% if page.url != apage.url %}
+ <li><a href="{{ apage.url | prepend: site.baseurl }}">{{ apage.title2 }}</a></li>                                             
+        {% endif %}
+    {% endif %}
+{% endfor %}     
+</ul>
