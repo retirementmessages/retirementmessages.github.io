@@ -1,3 +1,15 @@
+{% for page in site.pages %}
+  {% if page.categories contains 'tech' %}
+    <div class="item">
+      <h3><a href="{{ page.url }}">
+        {{ page.title }}
+      </a></h3>
+
+      <p>{{page.description}}</p>
+    </div>
+  {% endif %}
+{% endfor %}
+
 <ul>
   {% for page in site.pages %}
     <li>
@@ -7,15 +19,3 @@
   {% endfor %}
 </ul>
 
-
-{% for page in site.pages %}
-  {% if page.categories contains 'messages' %}
-    
-      <h3><a href="{{ page.url }}">
-        {{ page.title }}
-      </a></h3>
-
-      <p>{{page.description}}</p>
-    
-  {% endif %}
-{% endfor %}
