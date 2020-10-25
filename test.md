@@ -1,5 +1,5 @@
 {% for page in site.pages %}
-  {% if page.categories contains 'tech' %}
+  {% if page.categories contains 'messages' %}
     <div class="item">
       <h3><a href="{{ page.url }}">
         {{ page.title }}
