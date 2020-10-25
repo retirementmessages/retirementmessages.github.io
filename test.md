@@ -2,7 +2,7 @@
   {% for page in site.pages %}
     <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
-      {{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}
+      {{ page.content | strip_html | truncatewords:75 }}
     </li>
   {% endfor %}
 </ul>
