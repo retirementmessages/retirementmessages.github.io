@@ -1,8 +1,13 @@
 ---
 layout: default
+title: Testing
+description: testing
 permalink: /test/
 ---
 
+<h2>Test</h2>
+
+<p>
 {% for page in site.pages %}
   {% if page.categories contains 'messages' %}
     <div class="item">
@@ -14,6 +19,8 @@ permalink: /test/
     </div>
   {% endif %}
 {% endfor %}
+</p>
+
 
 <ul>
   {% for page in site.pages %}
