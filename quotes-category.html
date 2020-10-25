@@ -10,12 +10,11 @@ permalink: /category/quotes
   {% if page.categories contains 'messages' %}
     <div class="item">
       <h3><a href="{{ page.url }}">
-        {{ page.title }} {{ page.image }}
+        {{ page.title }}
       </a></h3>
-
+ {{ page.image }}
       <p>{{page.description}}</p>
     </div>
   {% endif %}
 {% endfor %}
 </p>
-
