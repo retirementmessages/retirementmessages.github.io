@@ -362,7 +362,7 @@ hr {
   text-align: center;
   width: 10.5rem;
   min-width: 10rem;
-  background-color: #ccc;
+  background-color: #d34836;
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -408,7 +408,16 @@ hr {
   text-decoration: none;  
  }
 
+.sharing-button.email {
+  background-color: #777;
+  color: #fff; 
+}
 
+.sharing-button.email:hover {
+  background-color: #666;
+  color: #fff; 
+  text-decoration: none;  
+ }
  
 
  
@@ -828,5 +837,4 @@ display:block;
     display: none;
   }
 }
-
 
