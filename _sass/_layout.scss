@@ -840,9 +840,14 @@ display:block;
 
 
 .standfirst {
-background: #ffffe0;
-  padding: 20px 20px 20px 20px;
-  margin-bottom: 20px;
-  border-radius:5px;
-  text-align:center;
+position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 20px;
+  margin-bottom: 24px;
+  background-color: pink;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
+  width: 100%;
 }
+
