@@ -1,0 +1,21 @@
+---
+layout: default
+title: Messages Category
+description: testing
+permalink: "/category/messages"
+published: true
+---
+
+<p>
+{% for page in site.pages %}
+  {% if page.categories contains 'messages' %}
+    <div class="item">
+      <h3><a href="{{ page.url }}">
+        {{ page.title }}
+      </a></h3>
+ <a href="{{ page.url }}"> <img class="img" src="{{ page.image }}" alt="" /></a>
+      <p>{{page.description}}</p>
+    </div>
+  {% endif %}
+{% endfor %}
+</p>
