@@ -34,9 +34,9 @@
         {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
 
         {%- if page.last_modified_at -%}
-            <p><em>Last updated: {{ page.last_modified_at | date: date_format }}</em></p>
+            <p><small><em>Last updated: {{ page.last_modified_at | date: date_format }}</em></small></p>
         {%- else -%}
-            <p><em>Last updated: {{ page.date | date: date_format }}</em></p>
+            <p><small><em>Last updated: {{ page.date | date: date_format }}</em></small></p>
         {%- endif -%}
       </time>
 
