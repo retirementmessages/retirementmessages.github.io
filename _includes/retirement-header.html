@@ -28,6 +28,8 @@
  
 </div>
 
+{% if page.layout == 'page' %}
+
 <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
 
@@ -37,3 +39,5 @@
             <p><em>Last updated: {{ page.date | date: date_format }}</em></p>
         {%- endif -%}
       </time>
+
+{% endif %}
