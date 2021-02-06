@@ -30,7 +30,7 @@
 
 {% if page.layout == 'page' %}
 
-<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+<time class="dt-published" itemprop="dateModified" datetime="{{ page.date | date_to_xmlschema }}">
         {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
 
         {%- if page.last_modified_at -%}
